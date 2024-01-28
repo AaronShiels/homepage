@@ -27,6 +27,7 @@ mono_crash.*
 .terraform.lock.hcl
 
 # Build results
+dist/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
