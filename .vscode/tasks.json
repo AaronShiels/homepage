@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "terraform: apply",
+      "command": "terraform",
+      "type": "shell",
+      "args": ["apply", "-var-file", "prod.tfvars"],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "terraform: init",
+      "command": "terraform",
+      "type": "shell",
+      "args": ["init"],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

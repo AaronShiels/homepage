@@ -16,6 +16,16 @@
 # Mono auto generated files
 mono_crash.*
 
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Lock file
+.terraform.lock.hcl
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -378,7 +388,6 @@ FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
 .vscode/*
-!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
