@@ -3,7 +3,6 @@ import { fileURLToPath } from "url";
 import ResolveTypeScriptPlugin from "resolve-typescript-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import CopyPlugin from "copy-webpack-plugin";
 
 const config = (_, { mode }) => {
   if (!mode) throw new Error("Mode not provided");
@@ -47,8 +46,7 @@ const config = (_, { mode }) => {
 
   const htmlPluginConfig = new HtmlWebpackPlugin({ template: "./src/index.html" });
   const miniCssExtractPlugin = new MiniCssExtractPlugin({ filename: "styles.[contenthash].css" });
-  // const copyPlugin = new CopyPlugin({ patterns: [{ from: "assets/*/*", context: "./src" }] });
-  const plugins = [htmlPluginConfig, miniCssExtractPlugin /*, copyPlugin*/];
+  const plugins = [htmlPluginConfig, miniCssExtractPlugin];
 
   return {
     entry,
