@@ -37,12 +37,51 @@ $link-active-border: $grey-light;
 
 @import "~bulma/bulma";
 
+.socials {
+  .icon {
+    margin: 0 0.5rem;
+    
+    :hover {
+      cursor: pointer;
+    }
+
+    i {
+      height: 100%;
+      width: 100%;   
+    }
+    
+    i.fb {      
+      background: url("./assets/fb.svg");
+    }
+
+    i.gh {      
+      background: url("./assets/gh.svg");
+    }
+
+    i.ig {      
+      background: url("./assets/ig.svg");
+    }
+
+    i.li {      
+      background: url("./assets/li.svg");
+    }
+
+    i.of {      
+      background: url("./assets/of.svg");
+    }
+  }
+}
+
+.section.hero {
+  padding: 0 0 3rem;
+}
+
 .hero-image {
-  background: url("./assets/profile1080.png") 50% 30% no-repeat fixed;
+  background: url("./assets/profile1080.png") 50% -200px no-repeat fixed;
+  padding-top: 300px;
 
   .fade {
     background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
     height: 100px;
-    margin-top: 300px;
   }
 }

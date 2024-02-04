@@ -5,7 +5,7 @@
       "label": "terraform: apply",
       "command": "terraform",
       "type": "shell",
-      "args": ["apply", "-var-file", "prod.tfvars"],
+      "args": ["apply", "-var-file", "prod.tfvars", "-auto-approve"],
       "problemMatcher": []
     },
     {
