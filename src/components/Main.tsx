@@ -9,24 +9,26 @@ const Main: FC = () => {
         <div className="hero-image">
           <div className="fade"></div>
         </div>
-        <h1 className="title is-1 has-text-centered">Aaron Shiels</h1>
-        <h4 className="subtitle is-4 has-text-centered">Software architect, technology enthusiast, and all around pretty ok guy 🙂</h4>
-        <div className="container has-text-centered socials">
-          <a href="https://www.linkedin.com/in/aaron-shiels-41601267" className="icon">
-            <i className="li"></i>
-          </a>
-          <a href="https://github.com/AaronShiels" className="icon">
-            <i className="gh"></i>
-          </a>
-          <a href="https://www.facebook.com/aaron.shiels" className="icon">
-            <i className="fb"></i>
-          </a>
-          <a href="https://www.instagram.com/bigazza1000" className="icon">
-            <i className="ig"></i>
-          </a>
-          <span className="icon" onClick={handleOFClick}>
-            <i className="of"></i>
-          </span>
+        <div className="container has-text-centered">
+          <h1 className="title is-1">Aaron Shiels</h1>
+          <h4 className="subtitle is-4">Software architect, technology enthusiast, and all around pretty ok guy 🙂</h4>
+          <div className="socials">
+            <a href="https://www.linkedin.com/in/aaron-shiels-41601267" className="icon">
+              <i className="li"></i>
+            </a>
+            <a href="https://github.com/AaronShiels" className="icon">
+              <i className="gh"></i>
+            </a>
+            <a href="https://www.facebook.com/aaron.shiels" className="icon">
+              <i className="fb"></i>
+            </a>
+            <a href="https://www.instagram.com/bigazza1000" className="icon">
+              <i className="ig"></i>
+            </a>
+            <span className="icon" onClick={handleOFClick}>
+              <i className="of"></i>
+            </span>
+          </div>
         </div>
       </section>
       <section id="bio" className="section">
@@ -34,7 +36,7 @@ const Main: FC = () => {
           <div className="column is-12">
             <h4 className="title is-4 has-text-centered">About Me</h4>
           </div>
-          <div className="column is-12">
+          <div className="column is-6">
             <p>Hi, I'm Aaron 👋</p>
             <br />
             <p>
@@ -66,6 +68,29 @@ const Main: FC = () => {
                 test-driven development power by Docker Compose.
               </li>
             </ul>
+          </div>
+          <div className="column is-6 timeline">
+            <div className="card">
+              <header className="card-header">
+                <span className="card-header-title">Architect</span>
+                <span className="card-header-subtitle">Foo Bar</span>
+              </header>
+            </div>
+            <div className="card">
+              <header className="card-header">
+                <p className="card-header-title">Associate Architect</p>
+              </header>
+            </div>
+            <div className="card">
+              <header className="card-header">
+                <p className="card-header-title">Lead Developer</p>
+              </header>
+            </div>
+            <div className="card">
+              <header className="card-header">
+                <p className="card-header-title">Senior Developer</p>
+              </header>
+            </div>
           </div>
         </div>
       </section>
