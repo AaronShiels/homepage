@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <style type="text/css">
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      to {
+        r: 24;
+        fill-opacity: 0;
+      }
+    }
+  </style>
+  <circle class="pulse" cx="24" cy="24" r="6" fill="white" />
+</svg>

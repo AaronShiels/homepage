@@ -19,10 +19,10 @@ const Main: FC = () => {
           <span className="icon of" onClick={handleOFClick}></span>
         </div>
       </section>
-      <section id="bio" className="section">
-        <h4 className="strong">About Me</h4>
+      <section id="bio">
         <div className="columns">
-          <div className="half">
+          <div className="column half">
+            <h4 className="strong">About Me</h4>
             <p>Hi, I'm Aaron 👋</p>
             <p>
               I am currently working as a software architect at <strong>Match Group</strong>'s Evergreen and Emerging division. Under the "Evergreen" banner, I
@@ -30,32 +30,9 @@ const Main: FC = () => {
               <strong>Match.com</strong>, and <strong>OkCupid</strong>. Under the "Emerging" banner, I work on new and experimental products and business
               avenues for the group.
             </p>
-            <p>
-              In my role as architect, I am responsible for building and executing on a technical vision for the platforms I work on. Some of my achievements
-              while in this role include:
-              <ul>
-                <li>
-                  The delivery of and migration to a <strong>mature, distributed dating platform</strong> to replace the aging legacy systems.
-                </li>
-                <li>
-                  Guidance and evangilism of the (then) new guiding patterns and principles for the future platform, <strong>microservice architecture</strong>,{" "}
-                  <strong>event-driven architecture</strong>, and <strong>CQRS</strong> to name a few.
-                </li>
-                <li>
-                  Evaluation and successful adoption of modern hosting solutions, including <strong>Kubernetes</strong> and <strong>cloud services</strong>.
-                </li>
-                <li>
-                  Design and delivery of a flexible <strong>API gateway solution</strong> in order to present the disparate components of the platform as a
-                  single, homogeneous API.
-                </li>
-                <li>
-                  Evaluation, adoption, and evangilism of a <strong>true continuous integration/continuous delivery</strong> pipeline, with a strong emphasis of{" "}
-                  test-driven development power by Docker Compose.
-                </li>
-              </ul>
-            </p>
           </div>
-          <div className="half">
+          <div className="column half">
+            <h4 className="strong">Experience</h4>
             <div className="timeline">
               <header className="timeline-header">
                 <span className="icon large mtch"></span>
@@ -68,6 +45,7 @@ const Main: FC = () => {
                 </span>
               </header>
               <div className="timeline-row">
+                <span className="icon large node active"></span>
                 <span>
                   <strong>Architect</strong>
                   <br />
@@ -75,6 +53,7 @@ const Main: FC = () => {
                 </span>
               </div>
               <div className="timeline-row">
+                <span className="icon large node"></span>
                 <span>
                   <strong>Associate Architect</strong>
                   <br />
@@ -82,6 +61,7 @@ const Main: FC = () => {
                 </span>
               </div>
               <div className="timeline-row">
+                <span className="icon large node"></span>
                 <span>
                   <strong>Platform Engineering Lead</strong>
                   <br />
@@ -89,6 +69,7 @@ const Main: FC = () => {
                 </span>
               </div>
               <div className="timeline-row">
+                <span className="icon large node"></span>
                 <span>
                   <strong>Senior Web Developer</strong>
                   <br />
@@ -108,6 +89,7 @@ const Main: FC = () => {
                 </span>
               </header>
               <div className="timeline-row">
+                <span className="icon large node"></span>
                 <span>
                   <strong>Programming Team Leader</strong>
                   <br />
@@ -115,6 +97,7 @@ const Main: FC = () => {
                 </span>
               </div>
               <div className="timeline-row">
+                <span className="icon large node"></span>
                 <span>
                   <strong>Lead Developer</strong>
                   <br />
@@ -122,6 +105,7 @@ const Main: FC = () => {
                 </span>
               </div>
               <div className="timeline-row">
+                <span className="icon large node"></span>
                 <span>
                   <strong>Software Developer</strong>
                   <br />
@@ -141,6 +125,7 @@ const Main: FC = () => {
                 </span>
               </header>
               <div className="timeline-row">
+                <span className="icon large node"></span>
                 <span>
                   <strong>Software Developer</strong>
                   <br />
