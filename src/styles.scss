@@ -1,102 +1,145 @@
 @charset "utf-8";
-@import "~bulma/sass/utilities/initial-variables.sass";
+@import "~minireset.css/minireset";
 
-// General colors
+$text: hsl(0, 0%, 71%);
+$text-strong: white;
+$background: black;
 
-$scheme-main: $black;
-$scheme-main-bis: $black-bis;
-$scheme-main-ter: $black-ter;
-$scheme-invert: $white;
-$scheme-invert-bis: $white-bis;
-$scheme-invert-ter: $white-ter;
+body {
+  color: $text;
+  background-color: $background;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
 
-// Text colors
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 1rem;
+}
 
-$text: $grey-light;
-$text-invert: $grey-darker;
-$text-light: $grey;
-$text-strong: $white;
+h1, h2, h3, h4, h5, h6 {  
+  text-align: center;
+  font-weight: 400;
+}
 
-// Link colors
+h1 {
+  font-size: 3rem;
+}
 
-$link-hover: $white;
-$link-hover-border: $grey-dark;
+h2 {
+  font-size: 2.5rem;
+}
 
-$link-focus: $white;
-$link-focus-border: $blue;
+h3 {
+  font-size: 2rem;
+}
 
-$link-active: $white;
-$link-active-border: $grey-light;
+h4 {
+  font-size: 1.5rem;
+}
 
-$card-background-color: $scheme-main-bis;
+ul {
+  list-style: disc outside;
+  margin-left: 2em;
+  margin-top: 1em 
+}
 
-@import "~bulma/bulma";
+strong, .strong {
+  color: $text-strong;
+  font-weight: 700;
+}
+
+section:not(.hero) {
+  padding: 3rem 1.5rem;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .third {
+    width: 33.3333%;
+  }
+
+  .quarter {
+    width: 25%;
+  }
+}
 
 .hero {
-  padding: 0 0 3rem;
+  text-align: center;
 
   .hero-image {
     background: url("./assets/profile1080.png") 50% -200px no-repeat fixed;
     padding-top: 300px;
   
     .fade {
-      background: linear-gradient(to bottom, rgba(0,0,0,0), $scheme-main);
+      background: linear-gradient(to bottom, rgba(0,0,0,0), $background);
       height: 100px;
     }
   }
 }
 
-.title {
-  &:not(.hero &) {
-    text-transform: uppercase;
-  }
-}
+.icon {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  height: 1.5rem;
+  margin: auto 0.5rem;
+  width: 1.5rem;
 
-.socials {
-  .icon {
-    margin: 0 0.5rem;
+  &.large {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  &.fb {      
+    background-image: url("./assets/fb.svg");
+  }
+
+  &.gh {      
+    background-image: url("./assets/gh.svg");
+  }
+
+  &.ig {      
+    background-image: url("./assets/ig.svg");
+  }
+
+  &.li {      
+    background-image: url("./assets/li.svg");
+  }
+
+  &.of {      
+    background-image: url("./assets/of.svg");
 
     &:hover {
       cursor: pointer;
     }
+  }
 
-    i {
-      height: 100%;
-      width: 100%;
+  &.mtch {      
+    background-image: url("./assets/mtch.svg");
+  }
 
-      &.fb {      
-        background: url("./assets/fb.svg");
-      }
-  
-      &.gh {      
-        background: url("./assets/gh.svg");
-      }
-  
-      &.ig {      
-        background: url("./assets/ig.svg");
-      }
-  
-      &.li {      
-        background: url("./assets/li.svg");
-      }
-  
-      &.of {      
-        background: url("./assets/of.svg");
-      }
-    }
+  &.clh {
+    background-image: url("./assets/clh.png");
+  }
+
+  &.fp {
+    background-image: url("./assets/fp.png");
   }
 }
 
 .timeline {
-  .card {
-    margin-bottom: 1rem;
-
-    .card-header-subtitle {
-      @extend .card-header-title;
-
-      color: $text;
-      flex-grow: 0;
-      font-weight: 400;
-    }
+  .timeline-header, .timeline-row {
+    display: flex;
+    padding: 0.75rem 1rem
   }
 }
